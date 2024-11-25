@@ -25,8 +25,6 @@ After reviewing the Finch quickstart tutorial, I shifted my attention to creatin
 
 The "user selected provider" piece was not totally clear to me. At first, I attempted to call the `https://api.tryfinch.com/providers` endpoint to get the list of providers and render that list to the screen. However, that endpoint returns a lot of data so I ended up manually copying the provider list from Finch connect into a JSON file. I ran out of time, but the idea was to have the user select the provider from the dropdown and have that data rendered to the screen. 
 
-Instead, my application requests an access token from the Finch API and returns dummy data with a list of employees. When an employee is clicked it displays their name and the company name.
-
 ### Key takeaways
 - Finch's API documentation is well organized, and was pleasant to experiment with. 
 - I struggled to understand the instructions. I wasn't sure if the instructions were intentionally obscure but in the future, I'd allocate my resources (time permitting) to clarify the instructions. 
@@ -34,7 +32,7 @@ Instead, my application requests an access token from the Finch API and returns 
 ### Project Strengths
 - Able to connect to Finch and request and access token
 - Renders the company and employee information to the UI
-- Handles the access token in a securely on the backend through a session cookie. 
+- Handles the access token securely on the backend through a session cookie. 
 
 ### Areas of Improvement
 - Not all areas of the requirements are implemented. 

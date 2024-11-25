@@ -1,0 +1,88 @@
+[
+    {
+      "index": 1,
+      "id": "adp_run",
+      "display_name": "ADP Run"
+    },
+    {
+      "index": 2,
+      "id": "adp_workforce_now",
+      "display_name": "ADP Workforce Now"
+    },
+    {
+      "index": 3,
+      "id": "ceridian_dayforce",
+      "display_name": "Ceridian Dayforce"
+    },
+    {
+      "index": 4,
+      "id": "gusto",
+      "display_name": "Gusto"
+    },
+    {
+      "index": 5,
+      "id": "horizonpayroll",
+      "display_name": "Horizon Payroll"
+    },
+    {
+      "index": 6,
+      "id": "insperity",
+      "display_name": "Insperity"
+    },
+    {
+      "index": 7,
+      "id": "justworks",
+      "display_name": "Justworks"
+    },
+    {
+      "index": 8,
+      "id": "onpay",
+      "display_name": "OnPay"
+    },
+    {
+      "index": 9,
+      "id": "paycom",
+      "display_name": "Paycom"
+    },
+    {
+      "index": 10,
+      "id": "paylocity",
+      "display_name": "Paylocity"
+    },
+    {
+      "index": 11,
+      "id": "quickbooks",
+      "display_name": "QuickBooks Online Payroll"
+    },
+    {
+      "index": 12,
+      "id": "square_payroll",
+      "display_name": "Square Payroll"
+    },
+    {
+      "index": 13,
+      "id": "zenefits",
+      "display_name": "TriNet HR Platform (fka Zenefits)"
+    },
+    {
+      "index": 14,
+      "id": "trinet",
+      "display_name": "TriNet PEO"
+    },
+    {
+      "index": 15,
+      "id": "ulti_pro",
+      "display_name": "UKG Pro"
+    },
+    {
+      "index": 16,
+      "id": "ukg_ready",
+      "display_name": "UKG Ready"
+    },
+    {
+      "index": 17,
+      "id": "wave",
+      "display_name": "Wave"
+    }
+  ]
+  

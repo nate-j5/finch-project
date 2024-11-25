@@ -1,40 +1,43 @@
-How to start the application
-1. Clone the repo `git clone`
+# How to start the application
+1. Clone the repository `https://github.com/nate-j5/finch-project`
 
-`Start Server`
-1. `cd server` - Navigate to the server directory  
-2. `npm install` - to install the dependencies
-3. copy the .env.copy file and add the fields `finch-client-secret` and `finch-secret` 
-4. `npm run dev` - start the development server
-5. `Localhost4000` - The server should start at 
+## Start the Server
+1. Run `cd server` - to navigate to the server directory  
+2. Run `npm install` - to install the dependencies
+3. Run `cp .env.example .env` - to copy the env.example file to a .env file and add the specified fields.
+4. Run `npm run dev` - to start the development server
+5. The server should start at `http://localhost:4000`
 
-`Start client`
-1. `cd client` - Navigate to the client directory  
-2. `npm install` - to install the dependencies
-3. run npm run dev 
-4. The server should start at Localhost4000
+## Start the Client
+1. Run `cd client` - to navigate to the client directory  
+2. Run `npm install` - to install the dependencies
+3. Run `npm start` - to start the development server
+4. The server should start at `http://localhost:3000`
 
-`Project Summary`
-My application requests an access token from the Finch API and returns dummy daya with a list of employees. When an employee is clicked it displays their name and the company name. The application has several limited features due to time constraints but below are some of my takeaways.  
 
-Key takeaways
-- Finch's API documentation is pretty well organized, done and was pleasant to experiment with. 
-- I spent too much time trying to understand the insturctions, because I spent the majority of my time working on this on the weekend. understand
+### Project Reflection
+I enjoyed working on this project, but I struggled to understand the instructions. I think I switched contexts 3 or 4 times which cost me a lot of time. Next time I would allocate a solid block of time to understand the instructions and return my clarifying questions. This project coincided with a lot of activity in my current role which constrained my time.
 
-Strengths
-- Able to connect to Finch and request and access toekn
-- Renders the company and employee informaton to the UI
-- Handles the access token in a secure enough manner given the time constraints
+My original interpretation was that I'd create a button that would open the Finch Connect and display employment data about a provider in my app based on user selection.  After attempting to implement this it didn't appear like this was the correct thinking which prompted me to re-think the solution. 
 
-Areas of Improvement
+After taking a look at the Finch quickstart tutorial, I shifted my attention to creating a button that when clicked would retrieve an access token based and then fetch data about an employer and employee. 
+
+The "user selected provider" piece was not totally clear to me. At first, I attempted to call the `https://api.tryfinch.com/providers` endpoint to get the list of providers and render that list to the screen. However, that endpoint returns a lot of data so I ended up manually copying the provider list from Finch connect into a JSON file. I ran out of time, but the idea was to have the user select the provider from the dropdown and have that data rendered to the screen. 
+
+Instead, my application requests an access token from the Finch API and returns dummy data with a list of employees. When an employee is clicked it displays their name and the company name.
+
+### Key takeaways
+- Finch's API documentation is well organized, and was pleasant to experiment with. 
+- I struggled to understand the instructions. I wasn't sure if the instructions were intentionally obscure but in the future, I'd allocate my resources (time permitting) to clarify the instructions. 
+
+### Project Strengths
+- Able to connect to Finch and request and access token
+- Renders the company and employee information to the UI
+- Handles the access token in a securely on the backend through a session cookie. 
+
+### Areas of Improvement
 - Not all areas of the requirements are implemented. 
-- The over architecture may not match the of the projects
-
-A reocrruing theme for my ar  this project was a lack of understanding of the instuctions, next time I would allocate a day to understand the prompt and return my clarifying questions but this projeted conincideed with a work project so I didn't have time constrained. My orignialy interpretation of the project was that 
-
-My first intepretation was that I'd create a button that when clicked would be prompted to open Finch Connect, follow the flow and then display some the employer and employee data, but after working to implement that and re-reading the instructions it appeared that wasn't the intention of the project and I used the Finch quickstart video to help me gain a better understanding of how Finch works (p.s. I belive the documentation here could use a small update)
-
-I then shifted my to creating a button that when clicked would retireve and access token and the "user selected" provider would be passed to the backend during the request which specified which provider the user selected. I orignally started wanted to make a fall to the Finch `https://api.tryfinch.com/providers` endpoint to get the list of providers and render that list to the screen. However, that enpdpoint returns a ton of data so I ended up manually copying the provider list from Finch connect into a json file and maually int he dropdown.
-
+- The overall architecture of the app may not be close to what the activity intends. 
+- I would use a different CSS implementation (not inline styles).
 
 

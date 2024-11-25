@@ -11,7 +11,7 @@
 ## Start the Client
 1. Run `cd client` - to navigate to the client directory  
 2. Run `npm install` - to install the dependencies
-3. Note - please ensure you set REACT_APP_CLIENT_SECRET equal to the same .env value listed in CLIENT_SECRET and REACT_APP_CLIENT_ID equal to the same .env value listed in CLIENT_ID so the front-end works properly. 
+3. Note - please ensure you set `REACT_APP_CLIENT_SECRET` equal to the same .env value listed in `CLIENT_SECRET` and `REACT_APP_CLIENT_ID` equal to the same .env value listed in `CLIENT_ID` so the front-end works properly. 
 4. Run `npm start` - to start the development server
 5. The server should start at `http://localhost:3000`
 

@@ -14,8 +14,8 @@ app.use(
     name: "session",
     keys: [process.env.COOKIE_SECRET || "your-secret-key"],
     maxAge: 24 * 60 * 60 * 1000, // 24 hours
-    httpOnly: true, // Prevents client-side access to cookies
-    sameSite: "lax", // Protects against CSRF
+    httpOnly: true, 
+    sameSite: "lax",
   })
 );
 
@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: "http://localhost:3000",
-    credentials: true, // Important for cookies
+    credentials: true,
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
     allowedHeaders: "Content-Type,Authorization,Finch-API-Version,provider_id",
   })
@@ -64,7 +64,6 @@ app.post("/api/get-access-token", async (req, res) => {
 
     // Store token in session instead of sending to client
     req.session.accessToken = response.data.access_token;
-    console.log("TOKEN", response.data.access_token);
 
     // Fetch additional data using the token
     const [directoryResponse, companyResponse] = await Promise.all([
